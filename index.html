@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ANIMAL TRIVIA</title>
+  <script src="https://kit.fontawesome.com/f75a1ae780.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <!-- Burger menu -->
+  <nav class="mobile-nav">
+    <a href="index.html"><img src="jenslogo.png" alt="Jens WebMalerbog logo"></a>
+    <button id="burger-menu" aria-label="Toggle Navigation"><i class="fas fa-bars"></i></button> 
+    <!-- Navigation items -->
+    <ul class="navbar__menu" id="navMenu">
+      <li>
+        <a href="#index">Forside</a>
+      </li>
+      <li>
+        <a href="dyralbum.html">Album</a>
+      </li>
+      <li>
+        <a href="kunstneren.html">Kunstneren</a>
+      </li>
+      <li>
+        <a href="index.html" id="button">Sign up</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <!-- Video -->
+  <div class="video-container">
+    
+    <video class="responsive-video" src="video.mp4" controls autoplay loop></video>
+    <h1>Jennifer's WebMalebog</h1>
+  </div>
+  <!-- Album section -->
+  <section class="image-gallery">
+    <div class="image-box">
+      <img src="horsestatue.jpg" alt="Image 1">
+      <p><a href="dyralbum.html">Dyre Album</a></p>
+      
+    </div>
+    <div class="image-box">
+      <img src="comingsoon.jpg" alt="Image 2">
+      <p>Kommer Snart...</p>
+    </div>
+    <div class="image-box">
+      <img src="comingsoon.jpg" alt="Image 3">
+      <p>Kommer Snart...</p>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="footer-content">
+    <div class="about-us">
+      <h3>About Us</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet velit magna.</p>
+    </div>
+    <div class="contact">
+      <p>Contact us: <a href="mailto:example@example.com">example@example.com</a></p> 
+      <p>Phone: +1234567890</p>
+    </div>
+  </div>
+</footer>
+<script src="script.js" defer></script>
+</body>
+</html>

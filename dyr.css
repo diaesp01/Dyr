@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+  grid-column: 1/6;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(139, 103, 139);
+  border-bottom: 4px solid rgb(132, 85, 85);
+}
+header .mobile-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .mobile-nav .logo-img {
+  max-width: 100px;
+}
+header .mobile-nav .navbar__toggle {
+  display: none;
+  cursor: pointer;
+}
+header .mobile-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+header .mobile-nav ul li a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 20px;
+  font-weight: bold;
+}
+header .mobile-nav ul li a:hover {
+  color: #FFD700;
+}
+@media screen and (max-width: 768px) {
+  header .mobile-nav .navbar__toggle {
+    display: block;
+  }
+  header .navbar__menu {
+    display: none;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-around;
+    height: 1%;
+    width: 100%;
+    position: absolute;
+    top: 5px;
+    left: 0;
+    background-color: rgb(139, 103, 139);
+    padding: 0;
+    opacity: 0;
+  }
+  header .navbar__menu li {
+    padding: 0.5rem 1rem;
+  }
+  header .navbar__menu li a {
+    color: whitesmoke;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.container .row .image {
+  flex: 0 0 100%;
+  margin-bottom: 30px;
+}
+.container .row .image img {
+  max-width: 100%;
+  height: auto;
+}
+.container .row .text {
+  flex: 0 0 100%;
+  margin: 0 20px;
+  font-size: 20px;
+  position: relative;
+  text-align: justify;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.container .row .text h1 {
+  font-size: 50px;
+  margin-left: 15px;
+  margin-right: 10px;
+  color: rgb(132, 85, 85);
+  font-size: 30px;
+}
+.container .row .text h2, .container .row .text h3, .container .row .text h4, .container .row .text h5 {
+  font-size: 20px;
+}
+.container .row .text p {
+  font-size: 20px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.container .row .text p h6 {
+  font-size: 12px;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+footer .footer-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+footer .footer-content .contact {
+  flex: 2;
+  text-align: right;
+}
+footer .footer-content .about-us {
+  flex: 2;
+  text-align: left;
+}
+footer .footer-content .about-us h3 {
+  margin-bottom: 15px;
+}/*# sourceMappingURL=dyr.css.map */

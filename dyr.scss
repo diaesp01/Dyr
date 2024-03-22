@@ -1,0 +1,163 @@
+@import 'colors';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+  grid-column: 1/6;
+  display: flex;
+  justify-content: space-between;
+  background-color: $nav-color;
+  border-bottom: 4px solid $primary-color;
+
+  .mobile-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo-img {
+      max-width: 100px; 
+    }
+
+    .navbar__toggle {
+      display: none; // Hidden on larger screens
+      cursor: pointer;
+    }
+
+    ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+
+      li {
+        a {
+          text-decoration: none;
+          color: $text-color;
+          font-size: 20px;
+          font-weight: bold;
+
+          &:hover {
+            color: $pointer;
+          }
+        }
+      }
+    }
+  }
+
+  // Navigation menu for small screens
+  @media screen and (max-width: 768px) {
+    .mobile-nav .navbar__toggle {
+      display: block; // Toggle icon on smaller screens
+    }
+
+    .navbar__menu {
+      display: none;
+      flex-direction: column;
+      align-items: left;
+      justify-content: space-around;
+      height: 1%;
+      width: 100%;
+      position: absolute;
+      top: 5px;
+      left: 0; 
+      background-color: $nav-color;
+      padding: 0;
+      opacity: 0;
+      li {
+        padding: 0.5rem 1rem;
+
+        a {
+          color: whitesmoke;
+        }
+      }
+    }
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+
+    .image {
+      flex: 0 0 100%;
+      margin-bottom: 30px;
+
+      img {
+        max-width: 100%; 
+        height: auto;
+      }
+    }
+
+    .text {
+      flex: 0 0 100%;
+      margin: 0 20px;
+      font-size: 20px; 
+      position: relative;
+      text-align: justify; 
+      margin-left: 20px; 
+      margin-right: 20px; 
+
+      h1 {
+        font-size: 50px;
+        margin-left: 15px;
+        margin-right: 10px;
+        color: $primary-color;
+        font-size: 30px;
+      }
+
+      h2, h3, h4, h5{
+        font-size: 20px;
+      }
+
+      p {
+        font-size: 20px; 
+        margin-left: 15px; 
+        margin-right: 15px; 
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+        h6 {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+
+  .footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .contact {
+      flex: 2;
+      text-align: right;
+    }
+
+    .about-us {
+      flex: 2;
+      text-align: left;
+
+      h3 {
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
+
